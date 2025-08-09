@@ -43,7 +43,7 @@
 $ErrorActionPreference = [System.Management.Automation.ActionPreference]::Stop
 $ProgressPreference = [System.Management.Automation.ActionPreference]::SilentlyContinue
 Set-StrictMode -Version 3
-$ModuleName = [System.Text.RegularExpressions.Regex]::Match((Get-Item $BuildFile).Name, '^(.*)\.build\.ps1$').Groups[1].Value
+$ModuleName = [System.Text.RegularExpressions.Regex]::Match((Get-Item $Buil`dFile).Name, '^(.*)\.build\.ps1$').Groups[1].Value
 [System.Version]$requiredPSVersion = '5.1.0'
 
 # Helper function for comparing hashtable key structures.
